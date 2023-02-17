@@ -10,10 +10,10 @@ int main(void)
 	int num;
 
 	for (bc = 'a'; bc <= 'f'; bc++)
-		putchar(bc)
+		putchar(bc);
 
 	for (num = 0; num < 10; num++)
-		putchar((num % 10) + '0');
+		putchar(num);
 
 	putchar('\n');
 
