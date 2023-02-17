@@ -8,13 +8,14 @@ int main(void)
 {
 	int c;
 
-	for (n = 44; n < 54; n++)
+	for (c = 44; c < 54; c++)
 
 		putchar(n);
-	if (n != 53)
+	if (c != 53)
 	{
 		putchar(',');
 		putchar(',');
 	}
 	putchar('\n');
 	return (0);
+}
