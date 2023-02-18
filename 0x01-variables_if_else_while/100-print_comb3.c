@@ -15,8 +15,7 @@ int main(void)
 	putchar(t);
 	{
 	if (f != t)
-	if (f == '0' && t == '9')
-	continue;
+	if (f == '0' && t == '9'
 	putchar(',');
 	putchar(' ');
 	}
