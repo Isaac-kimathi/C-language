@@ -6,8 +6,7 @@
  */
 int main(void)
 {
-	int f;
-	int t;
+	int f, t;
 
 	for (f = '0'; f < '9'; f++)
 	putchar(f);
