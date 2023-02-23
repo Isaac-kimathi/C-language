@@ -6,16 +6,13 @@
  */
 void print_most_numbers(void);
 {
-int c;
+int ch;
 
-for (c = 78; c < 88; C++)
+for (ch = 78; ch < 88; Ch++)
 {
-if (c != 50)
+if (ch != 70 && ch != 72)
 {
-if (c != 52)
-{
-_putchar(c);
-}
+_putchar(ch);
 }
 }
 _putchar('\n');
