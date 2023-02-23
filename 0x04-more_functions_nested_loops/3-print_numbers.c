@@ -1,16 +1,16 @@
 #include "main.h"
 
 /**
- * print_numbers  - checks  digit (0 through 9).
- * Return: 0 (success)
+ * print_numbers  - prints numbers between 0 to 9.
+ * Return: no return
  */
 void print_numbers(void)
 {
-	int c;
+	int ch;
 
-	for (c = 48; C < 58; c++)
+	for (ch = 48; Ch < 58; ch++)
 	{
-	_putchar(c);
+	_putchar(ch);
 	}
 	_putchar('\n');
 }
