@@ -26,9 +26,7 @@ int _atoi(char *s)
 	d++;
 	}
 	if (j == 1)
-	{
-	break;
-	}
+
 	d++;
 	return (d);
 }
