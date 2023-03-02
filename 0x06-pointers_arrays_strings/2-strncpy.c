@@ -3,9 +3,9 @@
 
 /**
  * _strncpy - copies a string
- * @dest - par 1
- * @src - par 2
- * @n - par 3
+ * @dest - par1
+ * @src - par2
+ * @n - par3
  */
 char *_strncpy(char *dest, char *src, int n)
 {
