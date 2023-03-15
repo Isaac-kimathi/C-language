@@ -4,8 +4,8 @@
 
 /**
  * argstostr - concatenates all the arguments of my program.
- * @ac:
- * @av:
+ * @ac: number of arguments to be passed
+ * @av: an array of pointers
  *
  * Return: a pointer to a new string, or NULL if it falls
  */
