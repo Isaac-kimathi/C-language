@@ -9,38 +9,35 @@
  * Return: pointer to 2 dim array
  */
 int **alloc_grid(int width, int height)
-
-	int a, b, c, d;
-	int **q;
+{
+	int **x;
+	int h, w;
 
 	if (width <= 0 || height <= 0)
-		return (NULL);
+	return (NULL);
 
-	q = malloc((sizeof int *) * height);
-	if (q == NULL)
+	x = malloc(sizeof(int *) * height);
+
+	if (x == NULL)
+	return (NULL);
+
+	for (h = 0; h < height; h++)
 	{
-		free(q);
+	x[h] = malloc(sizeof(int) * width);
+
+	if (x[h] == NULL)
+	{
+		for (; h >= 0; h--)
+		free(x[h]);
+		free(x);
 		return (NULL);
 	}
-	for (a = 0; a < height; a++)
-	{
-		q[a] = malloc(sizeof(int) * width);
-		if (q[a] = NULL)
-		{
-			for (b = a; b >= 0; b--)
-			{
-				free(q[b]);
-			}
-			free(q);
-			return (NULL);
-		}
 	}
-	for (c = 0; c < height; c++)
+
+	for (h = 0; h < height; h++)
 	{
-		for (d = 0; d < width; d++)
-		{
-			q[c][d] = 0;
-		}
+	for (w = 0; w < width; w++)
+		x[h][w] = 0;
 	}
-	return (q);
+	return (x);
 }
