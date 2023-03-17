@@ -3,19 +3,19 @@
 #include <stdlib.h>
 
 /**
- * _isdigit - tells if the string consists of digits
+ * _isdigit - loks to whether the string consists of digits
  * @argv: pointer to current item in argument
  * Return: return 0 if all digits, 1 if not all digits.
  */
 int _isdigit(char *argv)
 {
-	int i;
+	int l;
 
-	i = 0;
-	while (argv[i])
+	l = 0;
+	while (argv[l])
 	{
-	if (argv[i] >= '0' && argv[i] <= '9')
-	i++;
+	if (argv[l] >= '0' && argv[l] <= '9')
+	l++;
 	else
 	return (1);
 	}
@@ -28,17 +28,17 @@ int _isdigit(char *argv)
  */
 int _atoi(char *s)
 {
-	int i, result;
+	int l, result;
 
-	i = result = 0;
-	while (s[i])
+	l = result = 0;
+	while (s[l])
 	{
-	if (s[i] >= '0' && s[i] <= '9')
+	if (s[l] >= '0' && s[l] <= '9')
 	{
 	result *= 10;
-	result += (s[i] - '0');
+	result += (s[l] - '0');
 	}
-	i++;
+	l++;
 	}
 	return (result);
 }
@@ -50,16 +50,16 @@ int _atoi(char *s)
  */
 int main(int argc, char *argv[])
 {
-	int i;
+	int l;
 
 	if (argc != 3)
 	{
 	printf("Error\n");
 	exit(98);
 	}
-	for (i = 1; i < argc; i++)
+	for (l = 1; l < argc; l++)
 	{
-	if (_isdigit(argv[i]))
+	if (_isdigit(argv[l]))
 	{
 	printf("Error\n");
 	exit(98);
