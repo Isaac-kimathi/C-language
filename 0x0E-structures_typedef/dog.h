@@ -1,9 +1,10 @@
 #ifndef DOG_H
-#define Dog_H
+#define DOG_H
 
 /*
  * File: dog.h
  * Desc: Header file that defines a new type struct dog.
+ *
  */
 
 /**
@@ -29,4 +30,5 @@ typedef struct dog dog_t;
 void print_dog(struct dog *d);
 dog_t *new_dog(char *name, float age, char *owner);
 void free_dog(dog_t *d);
+
 #endif
